@@ -51,6 +51,7 @@ def borrar_uno():
 ventana = tk.Tk()
 ventana.title("Calculadora Científica")
 ventana.geometry("385x510")
+ventana.resizable(False, False)
 ventana.configure(bg="#1c1c1c")  # Fondo oscuro
 
 # Configuración de fuentes (Cámbialas aquí y se aplicarán a todo)
