@@ -86,7 +86,7 @@ botones_funciones = [
 def crear_boton(texto, fila, columna, comando, color=COLOR_BOTON_NUM, cspan=1):
     return tk.Button(
         ventana, text=texto, width=5, height=2, font=FUENTE_BOTONES,
-        bg=COLOR_TEXTO, 
+        bg=color, 
         borderwidth=0,             
         relief="flat",       
         highlightthickness=2,     
