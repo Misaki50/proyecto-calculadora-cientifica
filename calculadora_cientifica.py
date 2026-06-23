@@ -58,7 +58,7 @@ ventana.configure(bg="#1c1c1c")  # Fondo oscuro
 FUENTE_PANTALLA = ("Segoe UI", 24)
 FUENTE_BOTONES = ("Segoe UI", 11, "bold")
 
-# Paleta de colores modernos
+# Paleta de colores
 COLOR_FONDO = "#1c1c1c"
 COLOR_BOTON_NUM = "#333333"
 COLOR_BOTON_FUNC = "#505050"
