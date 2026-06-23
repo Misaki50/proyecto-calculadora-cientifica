@@ -78,7 +78,7 @@ botones = [
     ('0',4,0), ('0',4,1), ('.',4,2), ('÷',4,3),
 ]
 
-# Botones con funciones (los que tienen paréntesis)
+# Botones con funciones 
 botones_funciones = [
     ('sin',2,4), ('cos',3,4), ('tan',4,4), ('log',5,4),
 ]
@@ -86,7 +86,7 @@ botones_funciones = [
 def crear_boton(texto, fila, columna, comando, color=COLOR_BOTON_NUM, cspan=1):
     return tk.Button(
         ventana, text=texto, width=5, height=2, font=FUENTE_BOTONES,
-        bg=color, fg=COLOR_TEXTO, 
+        bg=COLOR_TEXTO, 
         borderwidth=0,             
         relief="flat",       
         highlightthickness=2,     
