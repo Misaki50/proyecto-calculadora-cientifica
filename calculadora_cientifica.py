@@ -87,12 +87,12 @@ def crear_boton(texto, fila, columna, comando, color=COLOR_BOTON_NUM, cspan=1):
     return tk.Button(
         ventana, text=texto, width=5, height=2, font=FUENTE_BOTONES,
         bg=color, fg=COLOR_TEXTO, 
-        borderwidth=0,              # Aumentamos el borde para dar volumen
-        relief="flat",            # Efecto 3D de "botón hacia afuera"
-        highlightthickness=2,       # Crea un borde extra que simula brillo
-        highlightbackground="#ade8f4", # Color celeste brillante (muy Frutiger Aero)
-        highlightcolor="#ffffff",    # Brillo blanco al enfocar
-        activebackground="#ffffff", # El botón se ilumina al tocarlo
+        borderwidth=0,
+        relief="flat", 
+        highlightthickness=2,
+        highlightbackground="#ade8f4",
+        highlightcolor="#ffffff",
+        activebackground="#ffffff",
         command=comando
     ).grid(row=fila, column=columna, columnspan=cspan, padx=3, pady=3, sticky="nsew")
 
