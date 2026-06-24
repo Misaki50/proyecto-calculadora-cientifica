@@ -36,7 +36,7 @@ def borrar_uno():
     texto_actual = pantalla.get()
     if texto_actual:
         # Lista de funciones que queremos borrar de un solo golpe
-        # Incluimos el "(" porque así es como las insertas en tu programa
+        
         funciones = ["sin", "cos", "tan", "log"]
         
         for f in funciones:
@@ -58,7 +58,7 @@ ventana.configure(bg="#1c1c1c")  # Fondo oscuro
 FUENTE_PANTALLA = ("Segoe UI", 24)
 FUENTE_BOTONES = ("Segoe UI", 11, "bold")
 
-# Paleta de colores modernos
+# Paleta de colores
 COLOR_FONDO = "#1c1c1c"
 COLOR_BOTON_NUM = "#333333"
 COLOR_BOTON_FUNC = "#505050"
@@ -78,7 +78,7 @@ botones = [
     ('0',4,0), ('0',4,1), ('.',4,2), ('÷',4,3),
 ]
 
-# Botones con funciones (los que tienen paréntesis)
+# Botones con funciones 
 botones_funciones = [
     ('sin',2,4), ('cos',3,4), ('tan',4,4), ('log',5,4),
 ]
@@ -86,10 +86,17 @@ botones_funciones = [
 def crear_boton(texto, fila, columna, comando, color=COLOR_BOTON_NUM, cspan=1):
     return tk.Button(
         ventana, text=texto, width=5, height=2, font=FUENTE_BOTONES,
+<<<<<<< HEAD
         bg=color, fg=COLOR_TEXTO, 
         borderwidth=0,
         relief="flat", 
         highlightthickness=2,
+=======
+        bg=color, 
+        borderwidth=0,             
+        relief="flat",       
+        highlightthickness=2,     
+>>>>>>> 885ab42d8a9c24bb383c181380ee7a73ccab456a
         highlightbackground="#ade8f4",
         highlightcolor="#ffffff",
         activebackground="#ffffff",
